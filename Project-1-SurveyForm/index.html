@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario BG3</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Formulário de Pesquisa BG3</h1>
+    <p id="description"><strong>Buscando entender sua experiência em BG3</strong></p>
+    <form id="survey-form">
+      <!--Informações Pessoais-->
+      <fieldset>
+        <legend><strong>Informações Pessoais</strong></legend>
+      <!--Name Field-->
+      <label id="name-label" for="name">Primeiro Nome<input type="text" id="name" name="name" required placeholder="Escreva aqui seu nome..."></label>
+      <label for="last-name">Último Nome<input type="text" id="last-name" name="last-name" placeholder="Escreva aqui seu sobrenome" required></label>
+      <!--Email Field-->
+      <label id="email-label" for="email">Email<input type="email" id="email" name="email" placeholder="Escreva aqui seu email..." required></label>
+      <!--Number Field-->
+      <label id="number-label" for="number">Idade<input type="number" id="number" name="number" min="10" max="115" placeholder="Escreva aqui sua idade..." required></label>
+      <!--Dropdown-->
+      <label for="profession">Qual é a sua atual forma de trabalho?</label>
+        <select id="dropdown" name="profession">
+          <option value="">Selecione um</option>
+          <option value="1">Estudante</option>
+          <option value="2">Trabalhador CLT</option>
+          <option value="3">Trabalhador Contratado</option>
+          <option value="4">Autônomo</option>
+        </select>
+        </fieldset>
+        <fieldset>
+          <legend><strong>Você recomendaria BG3 para um amigo?</strong></legend>
+          <label for="no"><input id="no" type="radio" name="recomend" class="inline" value="Op1">Não</label>
+          <label for="dont-know"><input id="dont-know" type="radio" name="recomend" class="inline" value="Op2">Não sei</label>
+          <label for="maybe"><input id="maybe" type="radio" name="recomend" class="inline" value="Op3">Talvez</label>
+          <label for="depends"><input id="depends" type="radio" name="recomend" class="inline" value="Op4">Depende</label>
+          <label for="yes"><input id="yes" type="radio" name="recomend" class="inline" value="Op5">Sim</label>
+          <label for="sure"><input id="sure" type="radio" name="recomend" class="inline" value="Op6">Com Certeza!</label>
+          <label for="bro-play-it"><input id="bro-play-it" type="radio" name="recomend" class="inline" value="Op7">Mermão, joga Saporra...</label>
+        </fieldset>
+       <fieldset>
+    <legend><strong>Qual foi o seu personagem favorito?</strong></legend>
+    <label for="astarion"><input class="inline" id="astarion" type="checkbox" name="astarion" value="Astarion">Astarion</label>
+    <label for="shadowheart"><input class="inline" id="shadowheart" type="checkbox" name="shadowheart" value="Shadowheart">Shadowheart/Umbralma</label>
+    <label for="gale"><input class="inline" id="gale" type="checkbox" name="gale" value="Gale">Gale</label>
+    <label for="laezel"><input class="inline" id="laezel" type="checkbox" name="laezel" value="Laezel">Lae'zel</label>
+    <label for="wyll"><input class="inline" id="wyll" type="checkbox" name="wyll" value="Wyll">Wyll</label>
+    <label for="karlach"><input class="inline" id="karlach" type="checkbox" name="karlach" value="Karlach">Karlach</label>
+    <label for="halsin"><input class="inline" id="halsin" type="checkbox" name="halsin" value="Halsin">Halsin</label>
+    <label for="minthara"><input class="inline" id="minthara" type="checkbox" name="minthara" value="Minthara">Minthara</label>
+    <label for="minsc"><input class="inline" id="minsc" type="checkbox" name="minsc" value="Minsc">Minsc</label>
+    <label for="jaheira"><input class="inline" id="jaheira" type="checkbox" name="jaheira" value="Jaheira">Jaheira</label>
+</fieldset>
+          <label for="story"><strong><legend>Qual foi o seu momento mais épico em BG3?</legend></strong>
+            <textarea id="story" name="story" rows="5" cols="50" placeholder="Quando Volo arrancou meu olho eu..."></textarea>
+          </label>
+          <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="Terms" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+<html>
